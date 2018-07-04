@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/box"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:textAllCaps="true"
+        android:layout_gravity="center"
+        android:text="Summary"
+        android:drawableLeft="@drawable/shop"
+        android:drawablePadding="10dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/topview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:drawableLeft="@drawable/user"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center"
+        android:textColor="#FF50260F"
+        android:textSize="18sp"
+        android:textStyle="italic" />
+
+
+    <TextView
+        android:id="@+id/custom_dialog_tv_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="15dp"
+        android:layout_gravity="center"
+        android:text="THANK YOU FOR TIME "
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="#FF50260F"
+        android:textSize="17sp" />
+    <CheckBox
+        android:id="@+id/end_summary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_gravity="center"
+        android:textStyle="italic"
+        android:textSize="15dp"
+        android:text="Are You Sure This Are All The Items You Need?"/>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <Button
+        android:id="@+id/custom_dialog_btn_continue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/endbutton"
+        android:padding="10dp"
+        android:layout_alignParentLeft="true"
+        android:drawableLeft="@drawable/add_shopping_cart"
+        android:drawablePadding="10dp"
+        android:text="Buy More"
+        android:textColor="#fff"
+        android:textSize="15sp" />
+    <Button
+        android:id="@+id/custom_dialog_btn_done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/endbutton"
+        android:padding="10dp"
+        android:layout_gravity="right"
+        android:drawableLeft="@drawable/clear_shopping_cart"
+        android:drawablePadding="10dp"
+        android:text="Add to Cart"
+        android:textColor="#fff"
+        android:textSize="15sp" />
+</RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeb54a"
+    tools:context=".FirstActivity">
+    <LinearLayout
+        android:id="@+id/topintro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:textSize="28sp"
+        android:text="JCoffee"
+        android:drawableRight="@drawable/espresso_cup"
+        android:drawablePadding="20dp"
+        android:fontFamily="@font/rancho_regular"
+        android:padding="20dp"
+        android:layout_gravity="center"
+        android:textAllCaps="true"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/topintro"
+            android:text="Order For The Best Coffee...."
+            android:textStyle="italic"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+
+<pl.droidsonroids.gif.GifTextView
+android:layout_width="match_parent"
+android:layout_height="300dp"
+    android:layout_centerInParent="true"
+android:background="@drawable/cof"
+/>
+    <com.wang.avi.AVLoadingIndicatorView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:indicatorName="BallPulseIndicator"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        />
+
+
+</RelativeLayout>
